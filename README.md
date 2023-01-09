@@ -35,7 +35,13 @@
     <a href="https://mail.google.com/mail" target="_blank"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=Gmail&logoColor=white"/></a>
     <a href="https://blog.naver.com/nokdununa" target="_blank"><img src="https://img.shields.io/badge/Blog-03C75A?style=flat-square&logo=Naver&logoColor=white"/></a>
 <figure>
+<br><br><br>
     
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jinjucha&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
+
+<br><br>
 
     
 </div>
