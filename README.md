@@ -2,11 +2,12 @@
 
 > 차진주(Jinju Cha) - chajinju 포트폴리오
 
-# 👋 Intro
+# 👩🏻‍💻 Intro
 
-> 안녕하세요! ***"항상 도전하고 싶은, 주도적인 자바 개발자"*** 차진주입니다!  
+> 안녕하세요! ***"항상 도전하고 싶은, 주도적인 자바 개발자"*** 차진주입니다!
 > 사용자에게 편리하고 혁신적인 서비스 개발에 욕심을 가지고
-> 다수 프로젝트에 투입되어 환경에 맞춰 업무를 진행하며 웹 개발자 역량을 길러왔습니다.
+> 다수 프로젝트에 투입되어 환경에 맞춰 업무를 진행하며 웹 개발 역량을 길러왔습니다.
+> 클린 코드를 지향하는 웹 개발자입니다. 
 <br />
 
 # 📝Projects
@@ -60,7 +61,7 @@
 <br>
     <p><b> 👩‍💻 Introduction </b></p>
 <br>
-안녕하세요. 클린 코드를 지향하는 웹 개발자입니다. 
+
 <br>내 이야기의 힘을 믿고, 더 많은 의미를 만들어 내기 위한 것들을 꿈꾸고 있습니다‍.
 <br><br><br>
     <p><b> 🔨 Stack 🔧</b></p>
@@ -78,7 +79,7 @@
 </figure>
 
 <br><br><br>
-    <p><b> 👩🏻‍💻 ME </b></p>
+    <p><b>  ME </b></p>
 <br>
 <figure>
     <a href="https://www.notion.so/chajinju34/development-notes-1802414492d8493ab6be03387da2fe49" target="_blank"><img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/></a>
