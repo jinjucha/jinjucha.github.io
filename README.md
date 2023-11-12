@@ -19,21 +19,15 @@
 
 > 주니어랩 'AI학습 수행평가' 론칭_(AI 스피킹·라이팅 수행평가 서비스)
 >
-> - 개발기간 : 2023.06.07~ ing
-> - 핵심 역할 : 메인 개발자, AI학습 서비스 결제/학습/주문 내역 페이지 개발 
+> - 개발기간 : 2023.05.07~ ing
+> - 핵심 역할 : AI학습 서비스 주문 결제/취소/내역 페이지 개발
+> - 구매 교재 학습 세팅 REST API 연동 개발 
 >
 >> Back-end
->> - Language : ASP 
+>> - Language : CLASSIC ASP 
 >> - Skill : REST API, ORACLE DB
 >> 
 >> [프로젝트 상세 설명(Back-end)](https://github.com/kimphysicsman/MyLittelTrip_backend)  
->
->> Front-end
->> - Language : javascript
->> - Skill : React.js
->>
->> [프로젝트 상세 설명(Front-end)](https://github.com/kimphysicsman/MyLittelTrip_frontend_react)
-
 <br />
 
 ## 2. 🛫 Myolin
@@ -41,10 +35,10 @@
 > 스마트 학습 프로그램 '마이올린' 론칭_(아동 테블릿 스마트 사업)
 >
 > - 개발기간 : 2022.07.07-09.02
-> - 핵심 역할 : 팀장, TSP 알고리즘을 활용한 여행추천 알고리즘 작성, React를 사용한 SPA 개발
+> - 핵심 역할 : 메인 개발자, 사내 JPA 서비스 첫 도입 
 >
 >> Back-end
->> - Language : python3  
+>> - Language : Sping Boot  
 >> - Skill : Django, Django-rest-framework, PostgreSQL
 >> 
 >> [프로젝트 상세 설명(Back-end)](https://github.com/kimphysicsman/MyLittelTrip_backend)  
