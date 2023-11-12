@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>누룽지 기가 막히게 끓이는 주막 주인장</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+</head>
+
+<body class="container">
+<article class="result">
+    <img src="../img/mbti/ISFJ.png" class="img-responsive"/>
+    <div>
+        <a href="../html/ENTP.html" id="goodUrl"><img id="good_img" src="../img/mbti/good/ENTP.png" style="float: left; width: 50%;"></a>
+        <a href="../html/ENTJ.html" id="badUrl"><img id="bad_img" src="../img/mbti/bad/ENTJ.png" style="float: left;  width: 50%;"></a>
+    </div>
+</article>
+<article class="share_box">
+    <div style="text-align: center; padding-top: 30px;">
+        <img src="../img/title_share.png" style="width: 30%;"/>
+    </div>
+    <div style="text-align: center;">
+        <a href="#" onclick="clip(); return false;"><img src="../img/btn_url.png" style="padding: 30px; width: 50%;" /></a>
+
+    </div>
+</article>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>
+
+
+    function clip(){
+        var url = '';
+        var textarea = document.createElement("textarea");
+        document.body.appendChild(textarea);
+        url = window.document.location.href;
+        textarea.value = url;
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        alert("URL이 복사되었습니다.")
+    }
+
+</script>
+</html>

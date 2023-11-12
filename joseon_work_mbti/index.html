@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조선시대 나는 어떤 계급이였을까? #mbti #mbti팩폭 #mbti테스트 #조선시대계급테스트<br></title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+    <article class="start">
+            <img src="./img/intro.png" class="img-responsive"/>
+            <a href="javascript:void(0);" onclick="start();"><img src="./img/btn_start.png" class="img-responsive"/></a>
+    </article>
+    <article class="question">
+        <div class="progress mt-5">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: calc(100/12*1%)"></div>
+        </div>
+        <div>
+            <h2 id="quesiton" class="text-center mt-8">번호</h2>
+            <h2 id="title" class="text-center mt-5">문제</h2>
+        </div>
+        <input id="type" type="hidden" value="EI">
+        <!--<button id="A" type="button" class="btn btn-default mt-3">Primary</button>
+        <button id="B" type="button" class="btn btn-default mt-3">Primary</button>-->
+        <button id="A" type="button">Primary</button>
+        <button id="B" type="button">Primary</button>
+    </article>
+    <article class="result">
+        <img id="result_img" class="img-responsive"><br>
+        <div>
+            <a href="/" id="goodUrl"><img id="good_img" style="float: left; width: 50%;"></a>
+            <a href="/" id="badUrl"><img id="bad_img" style="float: left;  width: 50%;"></a>
+
+        </div>
+    </article>
+    <article class="share_box">
+        <div style="text-align: center; padding-top: 30px;">
+            <img src="./img/title_share.png" style="width: 30%;"/>
+        </div>
+        <div style="text-align: center;">
+            <a href="#" onclick="clip(); return false;"><img src="./img/btn_url.png" style="padding: 30px; width: 50%;"/></a>
+        </div>
+    </article>
+
+    <input type="hidden" id="EI" value="0">
+    <input type="hidden" id="SN" value="0">
+    <input type="hidden" id="TF" value="0">
+    <input type="hidden" id="JP" value="0">
+    <input type="hidden" id="myMbti" value="">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+        var num = 1;
+        var q = {
+            1: {"question":"Q1.", "title": "출근길 버스를 타고<Br>창 밖을 보니 떠오르는 업무 생각", "type": "JP"
+                , "A": "오늘 처리할 업무 리스트를 떠올리며 우선순위를 생각한다"
+                , "B": "아침부터 피곤하니까 일단 사무실 도착해서 정한다."
+                }
+            , 2: {"question":"Q2.", "title": "스퀘어에서 커피 타임 중<Br>나는 어떤 편?", "type": "EI"
+                , "A": "지난 주말에 놀러 갔다 온 썰,<Br>맛집 추천 등 입이 쉬지 않는다"
+                , "B": "오 거기 괜찮아요? 맛있어요?!<Br>추천 좀 해주세요 리액션 담당"
+                }
+            , 3: {"question":"Q3.", "title": "점심시간,<Br>팀 동료와 어제 본<Br>드라마 얘기를 한다.", "type": "SN"
+                , "A": "그 장면에서 여주 너무 존예..<Br>남주 존잘~ 특정 상황에 대해 얘기한다"
+                , "B": "드라마 전체 줄거리에 대해 신나게 얘기한다."}
+            , 4: {"question":"Q4.","title": "오전 업무에 집중하고 있는데<Br>팀장님이 갑자기 TMI를 시작하신다", "type": "EI"
+                , "A": "ㅋㅋㅋㅋㅋ, 이모티콘 발사 리액션을 한다"
+                , "B": "아 그랬구나.. 하던 일을 계속 한다"}
+            , 5: {"question":"Q5.","title": "업무적으로는 잘 맞지만 사적으로는<Br>데면데면한 동료가 퇴근 후<Br>맛집에 함께 가지고 한다.", "type": "EI"
+                , "A": " 그 맛집 나도 가고싶었는데 거절하기도<Br>좀 그렇고 따라 간당 콜~!"
+                , "B": "어.. 회사 밖에서 따로 만나는건<Br>좀 불편할 것 같은데 고민에 빠진다"}
+            , 6: {"question":"Q6.","title": "휴.. 팀장님께서<br>신규 프로젝트에 투입시키셨다", "type": "SN"
+                , "A": "할 일을 구체적으로 지시해줘야 편하다"
+                , "B": "구체적으로 지시하면 피곤하고 스트레스 받는다<Br>방향만 제시하고 맡겨줘야 편하다"}
+            , 7: {"question":"Q7.","title": "꿀 같은 여름휴가<Br>제주도 가는 비행기를 타고<Br>여행을 떠날 예정이다.", "type": "SN"
+                , "A": "앜ㅋㅋ 기대된다. 근데 창가자리 아니면 어떡하지.<Br>요즘 기내식 안준다던데 간식거리 사올걸 그랬나"
+                , "B": "비행기가 갑자기 추락하면 어떡하지?<Br>아 근데 추락할 확률이 거의 없지 않나? <BR>그래도 혹시 추락해서 바다에 떨어지면 어떡하지?<Br>나 수영 못하는데.. <BR>그리고 바다 한 가운데서 구조 요청은 어떻게 하지? <BR>핸드폰은 터지나?"}
+            , 8: {"question":"Q8.","title": "내 영혼을 갈아 넣은<Br>프로젝트를 큰 문제 없이 런칭했다.<Br>더 듣기 좋은 칭찬은?", "type": "TF"
+                , "A": "와, 어떻게 이렇게 잘 하셨어요?<Br>갓벽하네요. 정말 대단하세요!"
+                , "B": "와, 고생 너무 많으셨어요!<Br>노력한만큼 결과가 잘 나왔나봐요!"}
+            , 9: {"question":"Q9.","title": "업무 도중 실수로 팀공용 폴더를<Br>몽땅 삭제해버린 동료가 우울해한다.", "type": "TF"
+                , "A": "삭제된 폴더를 다시 복구할 방법이 있는지 알아본다"
+                , "B": "완전 우울하겠다.. 나였으면 바로 광광 울듯 ㅜㅜ<Br>힘내. 동료를 위로해준다"}
+            , 10: {"question":"Q10.","title": "이렇게 일하면 다른 사람들이<Br>너 싫어해", "type": "TF"
+                , "A": "누가? 왜?!"
+                , "B": "마상입는다."}
+            , 11: {"question":"Q11.","title": "퇴근 5분 전, 마음은 이미 퇴근했는데<Br>갑자기 새로운 업무가 들어왔다.", "type": "JP"
+                , "A": "심각한 고민에 빠진다. 일단 대충이라도 파악하고<Br>업무 우선순위를 정해 놓는다."
+                , "B": "퇴근 5분전에 뭐람? 내일의 나에게 맡기고 일단 퇴근★"}
+            , 12: {"question":"Q12.","title": "팀장님의 급 번개 제안<Br>'오늘 술 한잔 고?!'", "type": "JP"
+                , "A": "별 일은 없지만 집가려고 했는뎅..<Br>갑작스러운 제안에 고민에 빠진다"
+                , "B": "오늘 별 일 없으니 콜이요! "}
+        }
+
+        var result = {
+            "ISTJ": {"img": "./img/mbti/ISTJ.png", "good" : "ENFP" , "bad" : "ENFJ"},
+            "ISFJ": {"img": "./img/mbti/ISFJ.png", "good" : "ENTP" , "bad" : "ENTJ"},
+            "INFJ": {"img": "./img/mbti/INFJ.png", "good" : "ESTP" , "bad" : "ESTJ"},
+            "INTJ": {"img": "./img/mbti/INTJ.png", "good" : "ESFP" , "bad" : "ESFJ"},
+            "ISTP": {"img": "./img/mbti/ISTP.png", "good" : "ENFJ" , "bad" : "ENFP"},
+            "ISFP": {"img": "./img/mbti/ISFP.png", "good" : "ENTJ" , "bad" : "ENTP"},
+            "INFP": {"img": "./img/mbti/INFP.png", "good" : "ESTJ" , "bad" : "ESTP"},
+            "INTP": {"img": "./img/mbti/INTP.png", "good" : "ESFJ" , "bad" : "ESFP"},
+            "ESTP": {"img": "./img/mbti/ESTP.png", "good" : "INFJ" , "bad" : "INFP"},
+            "ESFP": {"img": "./img/mbti/ESFP.png", "good" : "INTJ" , "bad" : "INTP"},
+            "ENFP": {"img": "./img/mbti/ENFP.png", "good" : "ISTJ" , "bad" : "ISTP"},
+            "ENTP": {"img": "./img/mbti/ENTP.png", "good" : "ISFJ" , "bad" : "ISFP"},
+            "ESTJ": {"img": "./img/mbti/ESTJ.png", "good" : "INFP" , "bad" : "INFJ"},
+            "ESFJ": {"img": "./img/mbti/ESFJ.png", "good" : "INTP" , "bad" : "INTJ"},
+            "ENFJ": {"img": "./img/mbti/ENFJ.png", "good" : "ISTP" , "bad" : "ISTJ"},
+            "ENTJ": {"img": "./img/mbti/ENTJ.png", "good" : "ISFP" , "bad" : "ISFJ"}
+        }
+        function start() {
+            $(".start").hide(); //main 페이지 히든 처리
+            $(".question").show(); //문항 페이지 오픈
+            $(".share_box").hide();
+            next();
+        }
+        $("#A").click(function(){
+            var type = $("#type").val();
+            var preValue = $("#"+type).val();
+            $("#"+type).val(parseInt(preValue)+1);
+            next();
+        });
+        $("#B").click(function(){
+            next();
+        });
+        function next() {
+            if (num == 13) {
+                $(".question").hide();
+                $(".result").show();
+                $(".share_box").show();
+                var mbti = "";
+                ($("#EI").val() < 2) ? mbti+="I" : mbti+="E";
+                ($("#SN").val() < 2) ? mbti+="N" : mbti+="S";
+                ($("#TF").val() < 2) ? mbti+="F" : mbti+="T";
+                ($("#JP").val() < 2) ? mbti+="P" : mbti+="J";
+                $("#result_img").attr("src",result[mbti]["img"]);
+                $("#good_img").attr("src", "./img/mbti/good/" + result[mbti]["good"] +  ".png");
+                $("#bad_img").attr("src", "./img/mbti/bad/" + result[mbti]["bad"] +  ".png");
+                //goodUrl, badUrl
+                $("a#goodUrl").attr('href', "./html/" + result[mbti]["good"] + ".html");
+                $("a#badUrl").attr('href', "./html/" + result[mbti]["bad"] + ".html");
+                $("#myMbti").val(mbti);
+            } else {
+                $(".progress-bar").attr('style','width: calc(100/12*'+num+'%)');
+                $("#quesiton").html("<span class='text-danger'>" + q[num]["question"]) + "<span>";
+                $("#title").html(q[num]["title"]);
+                $("#type").val(q[num]["type"]);
+                $("#A").html(q[num]["A"]);
+                $("#B").html(q[num]["B"]);
+                num++;
+            }
+        }
+
+        function clip(){
+            var myMbti = $("#myMbti").val();
+            var url = '';
+            if(myMbti == "") {
+                url = window.document.location.href;
+            } else {
+                url = 'https://joseonmbti.netlify.app/html/' + myMbti;
+            }
+            var textarea = document.createElement("textarea");
+            document.body.appendChild(textarea);
+            textarea.value = url;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("URL이 복사되었습니다.")
+
+        }
+
+    </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60e191957b0c847a"></script>
+</body>
+</html>
