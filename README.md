@@ -2,20 +2,12 @@
 
 > 차진주(Jinju Cha) - chajinju 포트폴리오
 
-# 👩🏻‍💻 Intro
+# 👩🏻‍💻  Intro
 
 > 안녕하세요! ***"항상 도전하고 싶은, 주도적인 자바 개발자"*** 차진주입니다! 
 > 사용자에게 편리하고 혁신적인 서비스 개발에 욕심을 가지고 있는 웹 개발자입니다.
 > 다수 프로젝트에 투입되어 환경에 맞춰 업무를 진행하며 웹 개발 역량을 길러왔습니다.
 <br />
-
-# 👋 Intro
-
-> 안녕하세요! ***"항상 새로운 것을 배우고 도전하고 싶은"*** 김동우입니다!  
-> 5개월간 ***팀장***을 맡으며 팀 프로젝트를 진행하여 백엔드 개발자 역량을 길렀고  
-> 내가 이해한 내용을 다른 사람들에게 설명하며 함께 성장할 수 있도록 ***영상***으로 기록했습니다.  
-> 저에 대한 더 자세한 내용은 <a href="https://www.notion.so/kimphysicsman/PROFILE-6bf254d419af4910b776c111efb371e4"> <img src="https://img.shields.io/badge/-Profile-8AC926?style=for-the-badge" height="20px" style="margin-bottom: -5px" /> </a>이곳을 통해 확인 하실 수 있습니다!
-
 
 # 📝Projects
 그동안 진행했던 프로젝트들 입니다!  
