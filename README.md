@@ -1,4 +1,3 @@
-# jinjucha.github.io
 # 📜 차진주 포트폴리오
 
 > 차진주(Jinju Cha) - chajinju 포트폴리오
