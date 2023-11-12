@@ -21,13 +21,16 @@
 > 주니어랩 'AI학습 수행평가' 론칭_(AI 스피킹·라이팅 수행평가 서비스)
 >
 > - 개발기간 : 2023.05.07~ ing
-> - 핵심 역할 : AI학습 서비스 주문 결제/취소/내역 페이지 개발
-> - 구매 교재 학습 세팅 REST API 연동 개발 
+> - 핵심 역할
+> : AI학습 서비스 주문 결제/취소/내역 페이지 개발
+> : 구매 교재 학습 세팅 REST API 연동 개발 
 >
 >> Back-end
 >> - Language : CLASSIC ASP 
 >> - Skill : REST API, ORACLE DB
->> 
+>> Front-end
+>> - Language : javascript
+>>
 >> [프로젝트 상세 설명(Back-end)](https://github.com/kimphysicsman/MyLittelTrip_backend)  
 <br />
 
