@@ -6,34 +6,17 @@
 
 > 안녕하세요! ***"주도적인 자바 개발자"*** 차진주입니다! <br>
 > 저는 모두에게 편리하고 혁신적인 웹 서비스를 개발하는 것에 대한 관심이 많습니다.<br>
-> 다수 프로젝트에 투입되어 사업 환경에 맞춰 개발과 유지보수 업무를 진행하며 웹 개발 역량을 길러왔습니다.
+> 경험이 많은 사람들과 함께 일하며 더 나은 방법을 찾고, 같이 성장할 수 있는 기회를 만들어 가고 싶습니다.<br>
+
 <br />
 
 # 📝Projects
+다수 프로젝트에 투입되어 사업 환경에 맞춰 개발과 유지보수 업무를 진행하며 웹 개발 역량을 길러왔습니다.
 그동안 진행했던 대표적인 프로젝트입니다!  
-최근 2년간 신규 사업 프로젝트 메인 개발자으로서 주업무는 ***전반적인 프로젝트 핵심 기능&API 개발*** 이었으며
-시스템 구조 설계부터 개발, 운영 업무를 모두 도맡아 진행하였습니다.
+최근 2년간 신규 사업 프로젝트 메인 개발자으로서 주업무는 ***전반적인 프로젝트 핵심 코어 기능&API 개발*** 이며
+시스템 아키텍처/데이터 모델링 구조 설계부터 개발, 운영 업무를 모두 도맡아 진행하였습니다.
 
-
-## 1. 🛫 AI 학습 서비스 개발
-
-> 주니어랩 'AI학습 수행평가' 론칭_(AI 스피킹·라이팅 수행평가 서비스)
->
-> - 개발기간 : 2023.05.07~ ing
-> - 핵심 역할
-> : AI학습 서비스 주문 결제/취소/내역 페이지 개발
-> : 구매 교재 학습 세팅 REST API 연동 개발 
->
->> Back-end
->> - Language : CLASSIC ASP 
->> - Skill : REST API, ORACLE DB
->> Front-end
->> - Language : javascript
->>
->> [프로젝트 상세 설명(Back-end)](https://github.com/kimphysicsman/MyLittelTrip_backend)  
-<br />
-
-## 2. 🛫 Myolin
+## 1. 🛫 Myolin
 
 > 스마트 학습 프로그램 '마이올린' 론칭_(아동 테블릿 스마트 사업)
 >
@@ -52,6 +35,24 @@
 >>
 >> [프로젝트 상세 설명(Front-end)](https://github.com/kimphysicsman/MyLittelTrip_frontend_react)
 
+<br />
+
+## 2. 🛫 AI 학습 서비스 개발
+
+> 주니어랩 'AI학습 수행평가' 론칭_(AI 스피킹·라이팅 수행평가 서비스)
+>
+> - 개발기간 : 2023.05.07~ ing
+> - 핵심 역할
+> : AI학습 서비스 주문 결제/취소/내역 페이지 개발
+> : 구매 교재 학습 세팅 REST API 연동 개발 
+>
+>> Back-end
+>> - Language : CLASSIC ASP 
+>> - Skill : REST API, ORACLE DB
+>> Front-end
+>> - Language : javascript
+>>
+>> [프로젝트 상세 설명(Back-end)](https://github.com/kimphysicsman/MyLittelTrip_backend)  
 <br />
 
 ## 2. 👞 MyLittleShoes
