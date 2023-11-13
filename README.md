@@ -47,7 +47,7 @@
 >> - Language : Classic ASP, Javascript
 >> - Skill : REST API, MSSQL 
 >>
->> [프로젝트 상세 설명(Back-end)](https://github.com/kimphysicsman/MyLittelTrip_backend)
+>> [프로젝트 상세 설명](https://github.com/kimphysicsman/MyLittelTrip_backend)
 >
 <br />
 
@@ -55,13 +55,13 @@
 
 > 온라인 영어 레벨 테스트 'NELT' 론칭_(유아~성인 프리미엄 영어 레벨 수준 진단 테스트 서비스)
 >
-> - 개발기간 : 2022.06.28-07.06
-> - 핵심 역할 : 팀장, Generative model를 이용한 신발 스타일링 기능 구현
-> - Language : python3
-> - Skill : Django, Django-rest-framework
+> - 개발기간 : 2021.10.04-2023.12.09
+> - 핵심 역할 : Generative model를 이용한 신발 스타일링 기능 구현
+>> - Language : Sping Boot
+>> - Skill : MSSQL
+>>
+>> [프로젝트 상세 설명](https://github.com/kimphysicsman/mylittleshoes_backend)
 >
-> [프로젝트 상세 설명](https://github.com/kimphysicsman/mylittleshoes_backend)
-
 <br />
 
 <br />
