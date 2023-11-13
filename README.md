@@ -18,23 +18,17 @@
 
 ## 1. 🛫 Myolin
 
-> 스마트 학습 프로그램 '마이올린' 론칭_(아동 테블릿 스마트 사업)
+> 신사업 스마트 학습 프로그램 '마이올린' 론칭_(아동 테블릿 학습 서비스 브랜드 사이트 개발)
 >
-> - 개발기간 : 2022.07.07-09.02
-> - 핵심 역할 : 메인 개발자, 사내 JPA 서비스 첫 도입 
+> - 개발기간 : 2022.10.03-2023.10.31
+> - 핵심 역할 : 메인 개발자, 사내 Spring Data JPA 첫 도입하여 프로젝트 구현
 >
 >> Back-end
->> - Language : Sping Boot  
->> - Skill : Django, Django-rest-framework, PostgreSQL
+>> - Language : Sping Boot
+>> - Skill : Spring Data JPA
 >> 
->> [프로젝트 상세 설명(Back-end)](https://github.com/kimphysicsman/MyLittelTrip_backend)  
+>> [프로젝트 상세 설명](https://github.com/kimphysicsman/MyLittelTrip_backend)  
 >
->> Front-end
->> - Language : javascript
->> - Skill : React.js
->>
->> [프로젝트 상세 설명(Front-end)](https://github.com/kimphysicsman/MyLittelTrip_frontend_react)
-
 <br />
 
 ## 2. 🛫 AI 학습 서비스 개발
