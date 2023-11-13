@@ -8,7 +8,6 @@
 > 저는 모두에게 편리하고 혁신적인 웹 서비스를 개발하는 것에 대한 관심이 많습니다.<br>
 > 혼자가 아닌 여럿이 함께 일하는 것이 즐거운 개발자입니다.<br>
 > 경험이 많은 사람들과 함께 일하며 더 나은 방법을 찾고, 같이 성장할 수 있는 기회를 만들어 가고 싶습니다.<br>
-<div align=center>
     <br><br>    
         <p><b> 🔨 Stack 🔧</b></p>
     <br>
@@ -26,7 +25,6 @@
         <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=MariaDB&logoColor=white">
         <img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=MariaDB&logoColor=white">
     </figure>
-</div>
     
 # 📝Projects
 다수 프로젝트에 투입되어 사업 환경에 맞춰 개발과 유지보수 업무를 진행하며 웹 개발 역량을 길러왔습니다. <br>
