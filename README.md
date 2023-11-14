@@ -30,6 +30,20 @@
 </div>
 <br />
 
+
+# 🔨 Stack 🔧
+> <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring Boot&logoColor=white"/><img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=Spring Boot&logoColor=white"/>
+<img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=OpenJDK&logoColor=white"/><img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
+    <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jQuery&logoColor=white"/>
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/><br>
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/>
+    <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=MariaDB&logoColor=white">
+    <img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=MariaDB&logoColor=white
+>
+<br />
+
 # 📝Projects
 다수 프로젝트에 투입되어 사업 환경에 맞춰 개발과 유지보수 업무를 진행하며 웹 개발 역량을 길러왔습니다. <br>
 대표적인 업무는 웹 서비스 구축과 운영을 위한 back-end 개발 업무입니다.
