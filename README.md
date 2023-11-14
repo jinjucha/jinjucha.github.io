@@ -40,7 +40,7 @@
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
     <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white"/>
     <img src="https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=MariaDB&logoColor=white">
-    <img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=MariaDB&logoColor=white
+    <img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=MariaDB&logoColor=white>
 >
 <br />
 
