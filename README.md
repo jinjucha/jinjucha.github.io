@@ -12,7 +12,6 @@
 <br />
 
 # 🔨 Stack 🔧
-#  Stack 
 <div>
 <figure>
     <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring Boot&logoColor=white"/>
@@ -29,8 +28,8 @@
     <img src="https://img.shields.io/badge/Thymeleaf-005F0F?style=flat-square&logo=MariaDB&logoColor=white">
 </figure>
 </div>
->
 <br />
+>
 
 # 📝Projects
 다수 프로젝트에 투입되어 사업 환경에 맞춰 개발과 유지보수 업무를 진행하며 웹 개발 역량을 길러왔습니다. <br>
