@@ -10,7 +10,9 @@
 > 경험이 많은 사람들과 함께 일하며 더 나은 방법을 찾고, 같이 성장할 수 있는 기회를 만들어 가고 싶습니다.<br>
 >
 <br />
+
 # 🔨 Stack 🔧
+#  Stack 
 <div>
 <figure>
     <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=Spring Boot&logoColor=white"/>
