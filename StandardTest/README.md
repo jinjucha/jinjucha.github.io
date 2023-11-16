@@ -5,7 +5,7 @@
 
 # 상세 설명
 
-<img src="https://github.com/jinjucha/jinjucha.github.io/blob/b6d03f03a2f4bd558686ad2f3893f191cbcb1cd8/StandardTest/img/main.png" width="30%" height="30%"/>
+<img src="https://github.com/jinjucha/jinjucha.github.io/blob/b6d03f03a2f4bd558686ad2f3893f191cbcb1cd8/StandardTest/img/main.png" width="35%" height="35%"/>
 <img src="https://github.com/jinjucha/jinjucha.github.io/blob/b6d03f03a2f4bd558686ad2f3893f191cbcb1cd8/StandardTest/img/user_info.PNG"/> 
 <img src="https://github.com/jinjucha/jinjucha.github.io/blob/b6d03f03a2f4bd558686ad2f3893f191cbcb1cd8/StandardTest/img/test_detail.PNG"/> 
 <img src="https://github.com/jinjucha/jinjucha.github.io/blob/b6d03f03a2f4bd558686ad2f3893f191cbcb1cd8/StandardTest/img/test_detail2.PNG"/> 
