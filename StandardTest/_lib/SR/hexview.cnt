@@ -1,0 +1,10 @@
+:Base hexview.hlp
+1 Menus
+2 File menu=menu_file
+2 View menu=menu_view
+2 Window menu=menu_window
+2 Help menu=menu_help
+1 Moving around a large file
+2 Previous Block=HID_VIEW_PREVIOUSBLOCK
+2 Next Block=HID_VIEW_NEXTBLOCK
+2 Go To Block=HID_VIEW_GOTO
