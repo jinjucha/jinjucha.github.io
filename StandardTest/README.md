@@ -12,7 +12,7 @@
   height: "100";
 }
 
-![title](/img/main.png){: width="100" height="100"}
+![title](/img/main.png){: width="30" height="30"}
 
 <img src="https://github.com/jinjucha/jinjucha.github.io/blob/b6d03f03a2f4bd558686ad2f3893f191cbcb1cd8/StandardTest/img/main.png"/>
 <img src="https://github.com/jinjucha/jinjucha.github.io/blob/b6d03f03a2f4bd558686ad2f3893f191cbcb1cd8/StandardTest/img/user_info.PNG"/> 
