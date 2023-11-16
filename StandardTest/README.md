@@ -12,7 +12,9 @@
   height: "100";
 }
 
-<img src="https://github.com/jinjucha/jinjucha.github.io/blob/b6d03f03a2f4bd558686ad2f3893f191cbcb1cd8/StandardTest/img/main.png"/>{: .center}
+![title](/img/main.png){: width="100" height="100"}
+
+<img src="https://github.com/jinjucha/jinjucha.github.io/blob/b6d03f03a2f4bd558686ad2f3893f191cbcb1cd8/StandardTest/img/main.png"/>
 <img src="https://github.com/jinjucha/jinjucha.github.io/blob/b6d03f03a2f4bd558686ad2f3893f191cbcb1cd8/StandardTest/img/user_info.PNG"/> 
 <img src="https://github.com/jinjucha/jinjucha.github.io/blob/b6d03f03a2f4bd558686ad2f3893f191cbcb1cd8/StandardTest/img/test_detail.PNG"/> 
 <img src="https://github.com/jinjucha/jinjucha.github.io/blob/b6d03f03a2f4bd558686ad2f3893f191cbcb1cd8/StandardTest/img/test_detail2.PNG"/> 
