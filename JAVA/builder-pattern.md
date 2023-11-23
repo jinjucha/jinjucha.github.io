@@ -8,7 +8,7 @@ public class User {
     private String name; 
     private int age; 
     private int height; 
-    private int iq; 
+    private String job; 
 }
 ```
 
@@ -28,7 +28,7 @@ public class User {
 ```java
 User user = User.builder()
         .name("jinjucha") 
-        .height(160) 
+        .height(160)
         .job("developer").build();
 ```
 
@@ -40,9 +40,9 @@ User에 몸무게를 나타내는 새로운 변수 weight 를 추가했다고 �
 
 ```java
 // ASIS 
-User user = new User("망나니개발자", 28, 180, 150) 
+User user = new User("jinjucha", 30, 160, "developer") 
 // TOBE 
-User user = new User("망나니개발자", 28, 180, 150, 75)
+User user = new User("jinjucha", 30, 160, "developer", 50)
 ```
 
 그러면 우리는 새롭게 추가되는 변수 때문에 기존의 코드를 수정해야 하는 상황에 직면하게 된다.
@@ -62,7 +62,7 @@ public class User {
     private final String name; 
     private final int age;
     private final int height;
-    private final int iq; 
+    private final String job; 
 }
 ```
 
