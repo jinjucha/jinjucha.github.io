@@ -27,9 +27,9 @@ public class User {
 
 ```java
 User user = User.builder()
-        .name("지환이는 개발자") 
-        .height(180) 
-        .iq(150).build();
+        .name("jinjucha") 
+        .height(160) 
+        .job("developer").build();
 ```
 
 그리고 이렇게 필요한 데이터만 설정할 수 있는 빌더의 장점은 테스트용 객체를 생성할 때 용이하게 해주고, 불필요한 코드의 양을 줄이는 등의 이점을 안겨준다.
