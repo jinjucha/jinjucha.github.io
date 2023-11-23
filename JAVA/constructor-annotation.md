@@ -1,5 +1,13 @@
+## 롬복이란?
+> Lombok은 불필요한 코드와 작업을 줄여주는 좋은 라이브러리이지만,
+> 한 클래스에 여러 어노테이션을 무분별하게 사용하다보면 혼선이 올 가능성이 높다.
+> 무조건 선언하는 것이 아닌 꼭 필요한 경우에만 사용하자!
+
 ## 생성자 관련 어노테이션
 > @NoArgsConstructor @RequiredArgsConstructor @AllArgsConstructor
+> @NoArgsConstructor : 파라미터가 없는 디폴트 생성자를 생성
+> @AllArgsConstructor : 모든 필드 값을 파라미터로 받는 생성자를 생성
+> @RequiredArgsConstructor : final이나 @NonNull으로 선언된 필드만을 파라미터로 받는 생성자를 생성
 
 ### 생성자의 규칙
 * 클래스명과 메서드명이 동일하다.
