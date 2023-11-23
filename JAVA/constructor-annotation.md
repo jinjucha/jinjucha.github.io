@@ -4,9 +4,9 @@
 > 무조건 Ctrl + c, Ctrl + v 해서 선언하는 것이 아닌 꼭 필요한 경우에만 사용하는 것이 바람직하다.
 
 ## 생성자 관련 어노테이션
-> @NoArgsConstructor : 파라미터가 없는 디폴트 생성자를 생성
-> @AllArgsConstructor : 모든 필드 값을 파라미터로 받는 생성자를 생성
-> @RequiredArgsConstructor : final이나 @NonNull으로 선언된 필드만을 파라미터로 받는 생성자를 생성
+* @NoArgsConstructor : 파라미터가 없는 디폴트 생성자를 생성
+* @AllArgsConstructor : 모든 필드 값을 파라미터로 받는 생성자를 생성
+* @RequiredArgsConstructor : final이나 @NonNull으로 선언된 필드만을 파라미터로 받는 생성자를 생성
 
 ### 생성자의 규칙
 * 클래스명과 메서드명이 동일하다.
