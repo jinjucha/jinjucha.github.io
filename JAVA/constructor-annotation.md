@@ -1,5 +1,5 @@
-## 생성자
-> 메서드명이 클래스명과 동일하고 리턴 자료형이 없는 메서드를 생성자라고 한다.  
+## 생성자 관련 어노테이션
+> @NoArgsConstructor @RequiredArgsConstructor @AllArgsConstructor
 
 ### 생성자의 규칙
 * 클래스명과 메서드명이 동일하다.
