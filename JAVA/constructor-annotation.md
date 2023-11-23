@@ -43,7 +43,16 @@ public class Customer {
 Customer customer = new Customer();
 ```
 
-> 하지만! 항상 초기화가 필요한 final이 붙은 field가 존재할 경우, @NoArgsContructor을 사용하면 compile error가 발생된다.
+> 항상 초기화가 필요한 final 변수가 존재할 경우, @NoArgsContructor을 사용하면 compile error가 발생된다.
 > @NoArgsConstructor(force = true)처럼 force라는 옵션에 true 값을 주면,
 > 모든 final fields는 0 / false / null로 초기화되어 사용 가능하다.
 
+## @RequiredArgsConstructor
+> 특별한 처리가 필요한 각 field마다 하나의 parameter를 갖는 생성자를 생성해준다.
+> 생성자의 Parameter의 순서는 클래스 내부에서 선언된 field의 순서로 매칭된다.
+```java
+Customer customer = new Customer(3L);
+```
+
+
+## @AllArgsConstructor
