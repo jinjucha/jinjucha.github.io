@@ -48,11 +48,60 @@ Customer customer = new Customer();
 > 모든 final fields는 0 / false / null로 초기화되어 사용 가능하다.
 
 ## @RequiredArgsConstructor
-> 특별한 처리가 필요한 각 field마다 하나의 parameter를 갖는 생성자를 생성해준다.
+> final 변수 또는 @NotNull으로 선언된 특별한 처리가 필요한 각 field마다 하나의 parameter를 갖는 생성자를 생성해준다.
+> 클래스가 의존하는 필드를 간단하게 초기화할 수 있다.
 > 생성자의 Parameter의 순서는 클래스 내부에서 선언된 field의 순서로 매칭된다.
 ```java
-Customer customer = new Customer(3L);
+@RequiredArgsConstructor
+public class Customer {
+    private final Long id;
+    private final String name;
+    private int age;
+}
+```
+
+RequiredArgsConstructor 을 사용하면 Java 코드는 아래와 같아진다.
+
+```java
+public class Customer {
+    private final Long id;
+    private final String name;
+    private int age;
+
+
+    public Customer(Long id, String name){
+        this.id = id;
+        this.name = name;
+    }
+}
 ```
 
 
 ## @AllArgsConstructor
+> 클래스의 모든 필드 값을 파라미터로 받는 생성자를 자동으로 생성한다.
+> 이 어노테이션을 사용하면, 클래스의 모든 필드를 한 번에 초기화할 수 있다
+```java
+public class Customer {
+    private Long id;
+    private String name;
+    private int age;
+}
+```
+
+AllArgsConstructor 을 사용하면 Java 코드는 아래와 같아진다.
+
+```java
+public class Customer {
+    private Long id;
+    private String name;
+    private int age;
+
+
+    public Customer(Long id, String name, int age){
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+}
+```
+
