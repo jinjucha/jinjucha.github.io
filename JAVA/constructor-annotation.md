@@ -81,6 +81,7 @@ public class Customer {
 > 클래스의 모든 필드 값을 파라미터로 받는 생성자를 자동으로 생성한다. <br>
 > 이 어노테이션을 사용하면, 클래스의 모든 필드를 한 번에 초기화할 수 있다
 ```java
+@AllArgsConstructor
 public class Customer {
     private Long id;
     private String name;
