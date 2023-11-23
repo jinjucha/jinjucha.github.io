@@ -37,19 +37,19 @@ public class Customer {
 ```
 
 
-> 즉, @NoArgsConstructor가 붙어있는 객체의 인스턴스를 만들 때,
+> 즉, @NoArgsConstructor가 붙어있는 객체의 인스턴스를 만들 때, <br>
 > 아래처럼 argument를 하나도 넘기지 않으면서 생성자 호출을 할 수 있다.
 ```java
 Customer customer = new Customer();
 ```
 
-> 항상 초기화가 필요한 final 변수가 존재할 경우, @NoArgsContructor을 사용하면 compile error가 발생된다.
-> @NoArgsConstructor(force = true)처럼 force라는 옵션에 true 값을 주면,
+> 항상 초기화가 필요한 final 변수가 존재할 경우, @NoArgsContructor을 사용하면 compile error가 발생된다. <br>
+> @NoArgsConstructor(force = true)처럼 force라는 옵션에 true 값을 주면, <br>
 > 모든 final fields는 0 / false / null로 초기화되어 사용 가능하다.
 
 ## @RequiredArgsConstructor
-> final 변수 또는 @NotNull으로 선언된 특별한 처리가 필요한 각 field마다 하나의 parameter를 갖는 생성자를 생성해준다.
-> 클래스가 의존하는 필드를 간단하게 초기화할 수 있다.
+> final 변수 또는 @NotNull으로 선언된 특별한 처리가 필요한 각 field마다 하나의 parameter를 갖는 생성자를 생성해준다. <br>
+> 클래스가 의존하는 필드를 간단하게 초기화할 수 있다. <br>
 > 생성자의 Parameter의 순서는 클래스 내부에서 선언된 field의 순서로 매칭된다.
 ```java
 @RequiredArgsConstructor
@@ -78,7 +78,7 @@ public class Customer {
 
 
 ## @AllArgsConstructor
-> 클래스의 모든 필드 값을 파라미터로 받는 생성자를 자동으로 생성한다.
+> 클래스의 모든 필드 값을 파라미터로 받는 생성자를 자동으로 생성한다. <br>
 > 이 어노테이션을 사용하면, 클래스의 모든 필드를 한 번에 초기화할 수 있다
 ```java
 public class Customer {
