@@ -12,8 +12,8 @@
 > 무조건 Ctrl + c, Ctrl + v 해서 선언하는 것이 아닌 꼭 필요한 경우에만 사용하는 것이 바람직하다.
 
 ## @NoArgsConstructor
-> 파라미터가 없는 기본 생성자를 만들어준다.
-
+> 파라미터가 없는 기본 생성자를 만들어준다. <br>
+> 주로 access = AccessLevel.PROTECTED를 설정하여 무분별한 객체 생성을 막는 용도로 쓰인다.
 ```java
 @NoArgsConstructor
 public class Customer {
@@ -46,6 +46,9 @@ Customer customer = new Customer();
 > 항상 초기화가 필요한 final 변수가 존재할 경우, @NoArgsContructor을 사용하면 compile error가 발생된다. <br>
 > @NoArgsConstructor(force = true)처럼 force라는 옵션에 true 값을 주면, <br>
 > 모든 final fields는 0 / false / null로 초기화되어 사용 가능하다.
+
+## 엔티티는 무조건 NoArgsConstructor를 가져야 합니다.
+https://codingwell.tistory.com/181 참조
 
 ## @RequiredArgsConstructor
 > final 변수 또는 @NotNull으로 선언된 특별한 처리가 필요한 각 field마다 하나의 parameter를 갖는 생성자를 생성해준다. <br>
