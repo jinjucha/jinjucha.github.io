@@ -13,8 +13,6 @@
 
 ## @NoArgsConstructor
 > 파라미터가 없는 기본 생성자를 만들어준다.
-> 즉, @NoArgsConstructor가 붙어있는 객체의 인스턴스를 만들 때,
-> 아래처럼 argument를 하나도 넘기지 않으면서 생성자 호출을 할 수 있다.
 
 ```java
 @NoArgsConstructor
@@ -23,8 +21,25 @@ public class Customer {
     private String name;
     private int age;
 }
+```
+
+NoArgsConstructor 을 사용하면 Java 코드는 아래와 같아진다.
+
+```java
+public class Customer {
+    private Long id;
+    private String name;
+    private int age;
 
 
+    public Customer(){}
+}
+```
+
+
+> 즉, @NoArgsConstructor가 붙어있는 객체의 인스턴스를 만들 때,
+> 아래처럼 argument를 하나도 넘기지 않으면서 생성자 호출을 할 수 있다.
+```java
 Customer customer = new Customer();
 ```
 
@@ -32,22 +47,3 @@ Customer customer = new Customer();
 > @NoArgsConstructor(force = true)처럼 force라는 옵션에 true 값을 주면,
 > 모든 final fields는 0 / false / null로 초기화되어 사용 가능하다.
 
-
-```java
-@NoArgsConstructor
-public class Person {
-    private String name;
-    private int age;
-    // getters and setters
-}
-```
-NoArgsConstructor 을 사용하면 Java 코드는 아래와 같아진다.
-
-```java
-public class Person {
-    private String name;
-    private int age;
-    
-	public Person(){}
-}
-```
