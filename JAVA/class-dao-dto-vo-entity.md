@@ -1,13 +1,7 @@
-## 요약
-* DAO :  Database에 접근하는 역할을 하는 객체.
-* DTO : 데이터를 전달하기 위한 객체
-* VO : 값 자체를 표현하는 객체.
-* Entity : 실제 DB 테이블과 매핑이 되는 클래스.
-
 ## DAO란?
 > Data Access Object의 약자로, Database에 접근하는 역할을 수행하는 객체 <br>
 > 프로젝트의 서비스 모델에 해당하는 부분과 데이터베이스를 연결한다. <br>
-> 데이터에 대한 CRUD 기능을 전담하는 오브젝트
+> 데이터에 대한 CRUD 기능을 전담하는 오브젝트, 일반적으로 Controller - Service - ServiceImpl - DAO 구조이다.
 
 ## DAO 사용 이유
 * 효율적인 커넥션 관리와 보안성
@@ -104,3 +98,10 @@ public class DtoEx {
 > Value Object의 약자로 DTO와 동일하게 각 계층간 데이터를 교환하기 위한 객체 <br>
 > 어떠한 비즈니스 로직도 가지지 않는 순수한 데이터 객체이다. (getter 만 가진 클래스)<br>
 > getter만 사용하기 때문에 불변의 성격을 띄는 클래스이다.
+
+## 요약
+* DAO :  Database에 접근하는 역할을 하는 객체.
+* DTO : 데이터를 전달하기 위한 객체
+* VO : 값 자체를 표현하는 객체.
+* Entity : 실제 DB 테이블과 매핑이 되는 클래스.
+
