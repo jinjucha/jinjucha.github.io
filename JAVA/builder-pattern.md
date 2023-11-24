@@ -1,4 +1,4 @@
-![image](https://github.com/jinjucha/jinjucha.github.io/assets/46393932/33923ea9-ff9b-487f-99fe-694272b2aed1)## 빌더 패턴을 사용해야만 하는 이유
+## 빌더 패턴을 사용해야만 하는 이유
 
 #### 생성자와 수정자로 구현된 User 클래스를 바탕으로 왜 생성자나 수정자보다 빌더를 써야하는지 이해해보도록 하자
 ```java
