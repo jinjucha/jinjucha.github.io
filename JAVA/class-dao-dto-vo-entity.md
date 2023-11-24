@@ -6,7 +6,6 @@
 ## DAO 사용 이유
 * 효율적인 커넥션 관리와 보안성
 * DAO는 비즈니스 로직을 분리하여 도메인 로직으로부터 DB와 관련한 메커니즘을 숨기기 위해 사용
-> Repository는 JPA를 사용할 때 DAO의 역할을 대신한다.
 
 ```java
 public class TestDao {
@@ -41,6 +40,10 @@ public void add(TestDto dto) throws ClassNotFoundException, SQLException {
 	}
 }
 ```
+
+## Repository
+> JPA와 같은 ORM을 사용하게 되면 객체 단위로 테이블을 관리 (Entity) <br>
+> JPA를 사용할 때 DAO의 역할을 대신한다. <br>
 
 ## DTO란?
 > Data Transfer Object의 약자로 각 계층간 데이터를 교환하기 위한 객체 <br>
