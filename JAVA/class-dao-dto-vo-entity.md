@@ -12,4 +12,39 @@
 ## DAO 사용 이유
 * 효율적인 커넥션 관리와 보안성
 * DAO는 비즈니스 로직을 분리하여 도메인 로직으로부터 DB와 관련한 메커니즘을 숨기기 위해 사용
+> Repository는 JPA를 사용할 때 DAO의 역할을 대신한다.
+
+```java
+public class TestDao {
+public void add(TestDto dto) throws ClassNotFoundException, SQLException {
+		private static final String DRIVER = "com.mysql.jdbc.Driver";
+    private static final String URL = "jdbc:mysql://localhost:3306/dao_Db";
+    private static final String USER = "root";
+    private static final String PASSWORD = "1234";   
+		
+		String sql = "SELECT * FROM vouchers";
+
+        try {
+            con = DriverManager.getConnection(URL, USER, PASSWORD);
+            stmt = con.createStatement();
+            res = stmt.executeQuery(sql);
+            while (res.next()) {
+                System.out.println(res.getString("id") + " ");
+                System.out.println(res.getString("value") + " ");
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+    preparedStatement.setString(1, dto.getName());
+    preparedStatement.setInt(2, dto.getValue());
+    preparedStatement.setString(3, dto.getData());
+    preparedStatement.executeUpdate();
+    preparedStatement.close();
+
+    connection.close();
+
+	}
+}
+```
 
