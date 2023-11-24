@@ -58,8 +58,10 @@ public class Thread01 {
     public static void main(String[] args){
         ThreadWithClass thread1 = new ThreadWithClass();       // Thread 클래스를 상속받는 방법
         Thread thread2 = new Thread(new ThreadWithRunnable()); // Runnable 인터페이스를 구현하는 방법
+        // Thread 클래스는 start 실행 시 run 메소드가 수행되도록 내부적으로 동작한다.
         thread1.start(); // 스레드의 실행
         thread2.start(); // 스레드의 실행
+    
     }
 }
 ```
