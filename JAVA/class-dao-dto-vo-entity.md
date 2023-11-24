@@ -49,7 +49,7 @@ public void add(TestDto dto) throws ClassNotFoundException, SQLException {
 ```
 
 ## DTO란?
-> Data Transfer Object의 약자로, 데이터를 전달하기 위한 객체 <br>
+> Data Transfer Object의 약자로 각 계층간 데이터를 교환하기 위한 객체 <br>
 > 어떠한 비즈니스 로직도 가지지 않는 순수한 데이터 객체이다. (getter & setter 만 가진 클래스) <br>
 > 데이터를 주고 받을 때 사용할 수 있고 주로 View와 Controller 사이에서 이용
 
@@ -99,3 +99,8 @@ public class DtoEx {
     }
 }
 ```
+
+## VO란?
+> Value Object의 약자로 DTO와 동일하게 각 계층간 데이터를 교환하기 위한 객체 <br>
+> 어떠한 비즈니스 로직도 가지지 않는 순수한 데이터 객체이다. (getter 만 가진 클래스)<br>
+> getter만 사용하기 때문에 불변의 성격을 띄는 클래스이다.
