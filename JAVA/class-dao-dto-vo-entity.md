@@ -48,3 +48,54 @@ public void add(TestDto dto) throws ClassNotFoundException, SQLException {
 }
 ```
 
+## DTO란?
+> Data Transfer Object의 약자로, 데이터를 전달하기 위한 객체 <br>
+> 어떠한 비즈니스 로직도 가지지 않는 순수한 데이터 객체이다. (getter & setter 만 가진 클래스) <br>
+> 데이터를 주고 받을 때 사용할 수 있고 주로 View와 Controller 사이에서 이용
+
+```java
+// 가변 객체 DTO
+// 기본생성자로 생성 후 값을 유동적으로 변경 
+public class DtoEx {
+    private String name;
+    private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}
+```
+
+```java
+// 불변 객체 DTO
+// 생성시 지정했던 값이 변하지 않고 getter() 메소드만 사용 가능
+public class DtoEx {
+    private final String name;
+    private final int age;
+
+    public DtoEx(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+```
