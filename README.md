@@ -1,4 +1,5 @@
 
+# 📜 차진주 포트폴리오
 
 > 차진주(Jinju Cha) - chajinju 포트폴리오
 
@@ -109,8 +110,6 @@
     <a href="https://blog.naver.com/nokdununa" target="_blank"><img src="https://img.shields.io/badge/Blog-03C75A?style=flat-square&logo=Naver&logoColor=white"/></a>
 <figure>
 <br><br><br>
-
-# 📜 차진주 포트폴리오
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jinjucha&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
