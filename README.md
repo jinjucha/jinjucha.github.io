@@ -5,7 +5,7 @@
 
 # 👩🏻‍💻  Intro
 
-> 안녕하세요! 웹 개발 엔지니어로 일하고 있는 ***"주도적인 개발자"*** 차진주입니다.<br>
+> 안녕하세요! 다양한 실무 경험으로 다져진 ***"주도적인 자바 개발자"*** 차진주입니다.<br>
 > 저는 모두에게 편리하고 혁신적인 웹 서비스를 만들기 위해 고민하고 있습니다.<br>
 > 혼자가 아닌 여럿이 함께 일하는 것이 즐거운 개발자입니다.<br>
 > 경험이 많은 사람들과 함께 일하며 더 나은 방법을 찾아 같이 성장할 수 있는 기회를 만들어 가고 싶습니다.<br>
@@ -24,9 +24,9 @@
 
 # 📝Projects
 다수 프로젝트에 투입되어 개발과 유지보수 업무를 진행하며 웹 개발 역량을 길러왔습니다. <br>
-대표적인 업무는 웹 서비스 구축과 운영을 위한 back-end 개발 업무입니다.
+대표적인 업무는 웹 서비스 구축 back-end 개발과 운영 업무입니다.
 그동안 진행했던 대표적인 프로젝트입니다!  
-최근 2년간 신규 사업 프로젝트 메인 개발자으로서 주업무는 ***전반적인 프로젝트 핵심 코어 기능&API 개발*** 이며
+최근 신규 사업 프로젝트 메인 개발자으로서 주업무는 ***전반적인 프로젝트 주요 핵심 코어 기능&API 개발*** 이며
 시스템 아키텍처/데이터 모델링 구조 설계부터 개발, 운영 업무를 도맡아 진행하였습니다.
 
 ## 1. 💻 Myolin
@@ -35,14 +35,13 @@
 >
 > - 개발기간 : 2022.10.03-2023.07.05
 > - 핵심 역할
-> : 사내 Spring Data JPA 첫 도입 후 프로젝트 구현 <br>
-> : 사용자 브랜드 사이트 개발 <br>
-> : 사업 운영자, 제휴사 관리자 사이트 개발 
+> : 사내 Spring Data JPA 도입 후 신규 프로젝트 구현 <br>
+> : 사용자 브랜드 사이트 개발 (스마트 학습 무료체험신청, 회원가입, 로그인, 마이페이지) <br>
+> : 사업 운영자, 제휴사 관리자 사이트 개발 (회원관리)
 >
->> - Language : Sping Boot
->> - Skill : Spring Data JPA (JPQL, QueryDSL)
+>> - Language : JAVA Sping Boot
+>> - Skill : Spring Data JPA (JPQL, QueryDSL), ORACLE DB
 >> 
->> [프로젝트 상세 설명](https://github.com/jinjucha/Myolin)  
 >
 <br />
 
@@ -52,13 +51,12 @@
 >
 > - 개발기간 : 2023.07.10-11.10
 > - 핵심 역할
-> : AI학습 서비스 무료체험신청/결제/취소/접수정보 페이지 개발 <br>
+> : AI학습 서비스 무료체험신청/학습 결제/취소/접수정보 페이지 개발 <br>
 > : 유료 or 무료체험 회원 별 교재 학습 정보 세팅 REST API 연동 개발 <br>
 >
->> - Language : Classic ASP, Javascript
+>> - Language : Classic ASP, Javascript, JQuery
 >> - Skill : REST API, MSSQL 
 >>
->> [프로젝트 상세 설명](https://github.com/kimphysicsman/MyLittelTrip_backend)
 >
 <br />
 
@@ -70,10 +68,9 @@
 > - 핵심 역할
 > : 응시자 학년, 수준 레벨 별 점수 구간 산정 후 데이터 구성(가상성적 분포표, 실 유저 성적 분포 버전) 성적표 전체 담당
 > : 관리자 사이트 회원 학년, 수준 통계 및 가상성적 관리 데이터 구성 페이지 개발
->> - Language : Sping Boot
+>> - Language : JAVA Sping Boot, Html5, Javascript, JQuery
 >> - Skill : MSSQL
 >>
->> [프로젝트 상세 설명](https://github.com/kimphysicsman/mylittleshoes_backend)
 >
 <br />
 
@@ -110,9 +107,9 @@
     <a href="https://blog.naver.com/nokdununa" target="_blank"><img src="https://img.shields.io/badge/Blog-03C75A?style=flat-square&logo=Naver&logoColor=white"/></a>
 <figure>
 <br><br><br>
-
+<!--
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jinjucha&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
+-->
 
 <br><br>
 
