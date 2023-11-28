@@ -108,3 +108,23 @@ public class DtoEx {
 * VO : 값 자체를 표현하는 객체.
 * Entity : 실제 DB 테이블과 매핑이 되는 클래스.
 
+
+## Entity란?
+> 실제 DB테이블과 매핑이 되는 클래스
+> Entity를 데이터를 전달하는 클래스로 사용하면 안된다
+> Entity를 기준으로 테이블이 형성되고, 컬럼이 변경된다.
+> Entity는 비즈니스 로직을 포함할 수도, setter() 메소드를 포함할 수도 있다.
+
+```java
+public class EntityEx {
+    private final Long id;
+    private final String name;
+    private final int value;
+
+    public EntityEx(Long id, String name, int value) {
+        this.id = id;
+        this.name = name;
+        this.value = value;
+    }
+}
+```
