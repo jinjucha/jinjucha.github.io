@@ -41,6 +41,8 @@ public void add(TestDto dto) throws ClassNotFoundException, SQLException {
 }
 ```
 
+![image](https://github.com/jinjucha/jinjucha.github.io/assets/46393932/7aad4498-bd1d-4c78-830b-1a14495273bd)
+
 ## Repository
 > JPA와 같은 ORM을 사용하게 되면 객체 단위로 테이블을 관리 (Entity) <br>
 > JPA를 사용할 때 DAO의 역할을 대신한다. <br>
