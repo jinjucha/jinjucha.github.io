@@ -10,6 +10,9 @@ Redis는 Memcached와 비슷한 `캐시 시스템`으로서 동일한 기능을
 
 !https://miro.medium.com/max/700/1*zArWVI0y5u_WVj0gktm92Q.png
 
+https://miro.medium.com/v2/resize:fit:700/1*tMiZs3RCrmxLGiFZgWRP6g.png
+
+
 NoSQL로서 Key-Value 타입의 저장소인 `레디스(Redis, Remote Dictionary Server)`의 주요 특징은 아래와 같습니다.
 
 - `영속성을 지원하는 인메모리 데이터 저장소`
