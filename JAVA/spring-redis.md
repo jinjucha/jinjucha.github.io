@@ -1,4 +1,12 @@
-### [Spring Boot] Redis 사용하기
+### Redis 장점
+> Redis는 메모리 기반의 저장소로 데이터에 접근하는 속도가 빠르다. 하드웨어 성능차이를 극복할 수 있음
+> String, Hash, List, Set, Sorted Set 등의 데이터 구조 활용 가능하다. 유연성 제공
+
+### Redis 목적
+> cashing : 실제 원본에 가지 않아도 빠르게 접근할 수 있도록 임시 저장하는 기능
+> 미리 계산된 데이터나 자주 사용되는 데이터를 임시적으로 저장함으로써, 데이터에 빠르게 접근할 수 있다.
+
+### Redis 사용하기
 Spring에서는 Spring Data Redis 라이브러리를 이용하여 Redis에 접근할 수 있다.
 이때 Redis를 접근할 수 있는 프레임워크로 Lettuce, Jedis가 있다. <br>
 Lettuce는 별도의 설정 없이 이용할 수 있고, Jedis는 별도의 의존성 추가가 필요하다.
@@ -33,6 +41,7 @@ dependencies {
 ### 2. RedisTemplate 설정
 > RedisTemplate, StringRedisTemplate bean 생성
 ```java
+//RedisConfig 클래스 생성
 @Configuration
 public class RedisConfig {
     @Value("${spring.redis.cluster.nodes}")
@@ -88,6 +97,12 @@ public class RedisConfig {
 
 
 ### 3. Redis Test
+로그인 계정 정보를 1분동안 Redis 캐시에 저장하는 비즈니스 로직을 생성해보자.
+* MemberDto 클래스: name, price, quantity를 담는 데이터 클래스를 생성한다. Redis는 바이트코드로 저장되기 때문에 Serializable을 구현해줘야 한다.
+* LoginDao 클래스: 장바구니를 담는 Repository 클래스를 생성한다. RedisConfig에 빈을 등록한 RedisTemplate을 사용하여 캐시에 저장하고 조회하는 로직을 만든다.
+*CartController 클래스: 비즈니스 로직을 실행하는 API(GET, POST "/{id}/cart")를 생성한다.
+
+
 ```java
     @Autowired
     private StringRedisTemplate redisTemplate;
@@ -115,3 +130,5 @@ public class RedisConfig {
 
 > "한남동 맛집"은 count가 3회 되어야 하고 <br>
 > "서촌 맛집"은 count가 1회 수행되어야 한다.
+
+
