@@ -1,13 +1,13 @@
 ### Redis 장점
-> Redis는 메모리 기반의 저장소로 데이터에 접근하는 속도가 빠르다. 하드웨어 성능차이를 극복할 수 있음
+> Redis는 메모리 기반의 저장소로 데이터에 접근하는 속도가 빠르다. 하드웨어 성능차이를 극복할 수 있음 <br>
 > String, Hash, List, Set, Sorted Set 등의 데이터 구조 활용 가능하다. 유연성 제공
 
 ### Redis 목적
-> cashing : 실제 원본에 가지 않아도 빠르게 접근할 수 있도록 임시 저장하는 기능
+> cashing : 실제 원본에 가지 않아도 빠르게 접근할 수 있도록 임시 저장하는 기능 <br>
 > 미리 계산된 데이터나 자주 사용되는 데이터를 임시적으로 저장함으로써, 데이터에 빠르게 접근할 수 있다.
 
 ### Redis 사용하기
-Spring에서는 Spring Data Redis 라이브러리를 이용하여 Redis에 접근할 수 있다.
+Spring에서는 Spring Data Redis 라이브러리를 이용하여 Redis에 접근할 수 있다. <br>
 이때 Redis를 접근할 수 있는 프레임워크로 Lettuce, Jedis가 있다. <br>
 Lettuce는 별도의 설정 없이 이용할 수 있고, Jedis는 별도의 의존성 추가가 필요하다.
 
