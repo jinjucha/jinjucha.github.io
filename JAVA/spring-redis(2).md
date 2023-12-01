@@ -78,9 +78,45 @@ public class RedisConfig {
 > RedisConnectionFactory 인터페이스를 통해 LettuceConnectionFactory를 생성하여 반환합니다.
 
 ### 3. Redis Test
-로그인 계정 정보를 1분동안 Redis 캐시에 저장하는 비즈니스 로직을 생성해보자.
-* MemberDto 클래스: name, price, quantity를 담는 데이터 클래스를 생성한다. Redis는 바이트코드로 저장되기 때문에 Serializable을 구현해줘야 한다.
-* LoginDao 클래스: 장바구니를 담는 Repository 클래스를 생성한다. RedisConfig에 빈을 등록한 RedisTemplate을 사용하여 캐시에 저장하고 조회하는 로직을 만든다.
+로그인 계정 정보를 1분동안 Redis 캐시에 저장하는 비즈니스 로직을 생성해보자..
+https://zuminternet.github.io/spring-session/
+
+* LoginMemberVo 클래스: name, price, quantity를 담는 데이터 클래스를 생성한다. Redis는 바이트코드로 저장되기 때문에 Serializable을 구현해줘야 한다.
+```java
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class LoginMemberVo implements Serializable {
+    private String memno;
+    private String webId;
+    private String name;
+}
+```
+
+* LoginMemberDao 클래스: 장바구니를 담는 Repository 클래스를 생성한다. RedisConfig에 빈을 등록한 RedisTemplate을 사용하여 캐시에 저장하고 조회하는 로직을 만든다.
+
+```java
+@Repository
+@RequiredArgsConstructor
+public class LoginMemberDao {
+    private final RedisTemplate<String, Object> redisTemplate;
+
+    public void addWebId(LoginMemberVo loginVo, Long customerId){
+        String key = KeyGen.cartKeyGenerate(customerId); // "cart:{customerId}"
+
+        redisTemplate.opsForValue().set(key, itemDto);
+        redisTemplate.expire(key, 1, TimeUnit.MINUTES);
+    }
+
+    public ItemDto findById(Long customerId){
+        String key = KeyGen.cartKeyGenerate(customerId); // "cart:{customerId}"
+
+        return (ItemDto) redisTemplate.opsForValue().get(key);
+    }
+
+}
+```
+
 *CartController 클래스: 비즈니스 로직을 실행하는 API(GET, POST "/{id}/cart")를 생성한다.
 
 
