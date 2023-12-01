@@ -79,7 +79,7 @@ public class RedisConfig {
 | spring.redis.password |  | 레디스 서버 로그인 패스워드 |
 | spring.redis.pool.max-active | 8 | pool에 할당될 수 있는 커넥션 최대수 (음수로 하면 무제한) |
 | spring.redis.pool.max-idle | 8 | pool의 "idle" 커넥션 최대수 (음수로 하면 무제한) |
-| spring.redis.pool.max-wait | -1 | pool이 바닥났을 때 예외 발생 전, 커넥션 할당 차단 최대 시간(단위 밀리세컨드, 음수는 무제한 차단) |
+| spring.redis.pool.max-wait | -1 | pool이 바닥났을 때 예외 발생 전, 커넥션 할당 차단 최대 시간 <br> (단위 밀리세컨드, 음수는 무제한 차단) |
 | spring.redis.pool.min-idle | 0 | 풀에서 관리하는 idle 커넥션의 쵀소수 대상 (양수일 때만 유효) |
 | spring.redis.port | 6379 | 레디스 서버 포트 |
 | spring.redis.sentinel.master |  | 레디스 서버 이름 |
