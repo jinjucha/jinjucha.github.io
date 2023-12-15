@@ -31,3 +31,24 @@ CREATE INDEX idx_order_id ON orders (order_id);
 ### 서브쿼리 최소화하기
 > 서브쿼리는 복잡한 쿼리를 작성할 때 유용하지만, 성능 저하의 원인이 될 수 있다. <br>
 > 서브쿼리 대신 JOIN, UNION, EXISTS 등 방법을 사용하여 쿼리를 작성하는 것이 좋다.
+> 사용 시 서브쿼리의 결과를 캐시하여 재사용하는 것이 바람직하다. 
+
+```query
+SELECT *
+FROM orders
+WHERE customer_id IN (
+  SELECT customer_id
+  FROM customers
+  WHERE gender = 'F'
+)
+```
+위 쿼리에서는 성별이 여자인 고객이 주문한 모든 주문을 가져오는데 서브쿼리를 사용한다.
+
+```query
+SELECT *
+FROM orders
+JOIN customers
+ON orders.customer_id = customers.customer_id
+WHERE customers.gender = 'F'
+```
+예시처럼 JOIN을 사용하여 같은 결과를 얻을 수 있으므로 서브쿼리를 굳이 사용하지 말자
