@@ -21,8 +21,9 @@
 
 ### XSS 공격 취약점 보완코드
 > 게시판 글작성 페이지에서는 제목란이나 내용란, <input/> 태그 안에 텍스트를 입력할 수 있는 곳에서 <br>
-> 스크립트 코드를 작성하여 XSS 공격을 시도할 수 있다.<br> 
-> 스크립트 입력 구문 : <audio oncanplay=prompt('XSS')><source src="https://공격자.서버/test.wav" type="audio/wav"></audio>
+> 스크립트 코드를 작성하여 XSS 공격을 시도할 수 있다.<br>
+> 스크립트 입력 구문 : <audio oncanplay=prompt('XSS')><source src="https://공격자.서버/test.wav" type="audio/wav"></audio> <br>
+> HTML 코드 또는 쿼리문으로 인식되는 문자를 일반 문자열로 치환해서 방어한다.
 ```java
 public static String checkXss(String input) {
     if (input == null || input.trim().isEmpty()) {
@@ -46,10 +47,10 @@ public static String checkXss(String input) {
     return output;
 }
 ```
-HTML 코드 또는 쿼리문으로 인식되는 문자를 일반 문자열로 치환해서 방어한다.
 
 ### 허가되지 않은 접근 보완코드
-> 특정 권한을 가진 사용자만 글을 작성하도록 제한하는 페이지에서 JSP의 JavaScript 영역에서만 <br>
-> 코드를 검증하면 클라이언트 요청 파라미터에서 데이터 조작이 가능해 권한을 부여하지 않은 사용자도 접근 가능하다.
-
+> 특정 권한을 가진 사용자만 글을 작성할 수 있도록 제한하는 페이지에서 JSP의 JavaScript 영역에서만 <br>
+> 코드를 검증하면 클라이언트 요청 파라미터에서 데이터 조작이 가능해 권한을 부여하지 않은 사용자도 접근 가능하다. <br>
+> 서버에서 권한 체크를 하고 글쓰기 버튼이 포함된 html 코드를 리턴 시 반환하도록 한다.
+>  
  
