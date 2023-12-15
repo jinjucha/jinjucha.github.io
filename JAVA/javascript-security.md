@@ -8,7 +8,7 @@
 
 ### 크로스사이트 스크립트(XSS, Cross-Site Scripting)
 > ![image](https://github.com/jinjucha/jinjucha.github.io/assets/46393932/4ecf718f-8195-47ca-816b-abe7bdde6342) <br>
-> 악성스크립트가 삽입된 게시글 클릭을 유도하여 사용자의 쿠키 정보, 세션 정보를 탈취하는 방법
+> 악성 스크립트가 삽입된 게시글 클릭을 유도하여 사용자의 쿠키 정보, 세션 정보를 탈취하는 방법
 
 ### 취약한 인증과 세션관리
 > 인증과 세션관리와 연관된 어플리케이션 기능이 올바르게 구현되지 않아, <br>
@@ -19,8 +19,10 @@
 > 게시판이나 웹 메일 등에 스크립트를 삽입하여 비정상적인 페이지가 보이게해 <br>
 > 타 사용자의 사용을 방해하거나 쿠키 및 기타 정보를 특정 사이트로 전송하는 등의 공격 방법
 
-## 취약점 보완코드
-
+### XSS 공격 취약점 보완코드
+> 게시판 글작성 페이지에서는 제목란이나 내용란, <input/> 태그 안에 텍스트를 입력할 수 있는 곳에서 <br>
+> 스크립트 코드를 작성하여 XSS 공격을 시도할 수 있다.<br> 
+> 스크립트 입력 구문 : <audio oncanplay=prompt('XSS')><source src="https://공격자.서버/test.wav" type="audio/wav"></audio>
 ```java
 public static String checkXss(String input) {
     if (input == null || input.trim().isEmpty()) {
@@ -45,4 +47,9 @@ public static String checkXss(String input) {
 }
 ```
 HTML 코드 또는 쿼리문으로 인식되는 문자를 일반 문자열로 치환해서 방어한다.
+
+### 허가되지 않은 접근 보완코드
+> 특정 권한을 가진 사용자만 글을 작성하도록 제한하는 페이지에서 JSP의 JavaScript 영역에서만 <br>
+> 코드를 검증하면 클라이언트 요청 파라미터에서 데이터 조작이 가능해 권한을 부여하지 않은 사용자도 접근 가능하다.
+
  
