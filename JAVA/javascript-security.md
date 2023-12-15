@@ -1,6 +1,6 @@
 ##  JavaScript 보안에 대하여
 
-### 웹보안 취약점(OWASP-10 중 상위 5가지)
+## 웹보안 취약점(OWASP-10 중 상위 5가지)
 
 ### SQL Injection
 > ![image](https://github.com/jinjucha/jinjucha.github.io/assets/46393932/8c218130-8fb5-4bba-889b-61d8c8f4c86e) <br>
@@ -19,31 +19,30 @@
 > 게시판이나 웹 메일 등에 스크립트를 삽입하여 비정상적인 페이지가 보이게해 <br>
 > 타 사용자의 사용을 방해하거나 쿠키 및 기타 정보를 특정 사이트로 전송하는 등의 공격 방법
 
-취약점 보완코드
+## 취약점 보완코드
 
-'-----------------------------------------------------
-'Change Query String
-'-----------------------------------------------------
-Function ckStr(dest, ishtml)
-	Dim returnStr : returnStr = ""&dest
-	If ishtml = "" Then ishtml = "0"
-
-	If ishtml = "0" Then
-		returnStr = Replace(returnStr, "'", "''")
-	ElseIf ishtml = "1" Then
-		returnStr = Replace(returnStr, "'", "''")
-		returnStr = Replace(returnStr, "<", "&lt;")
-		returnStr = Replace(returnStr, ">", "&gt;")
-		returnStr = Replace(returnStr, "script", "")
-		returnStr = Replace(returnStr, "union", "")
-		returnStr = Replace(returnStr, "update", "")
-		returnStr = Replace(returnStr, "delete", "")
-		returnStr = Replace(returnStr, "xp_cmdshell", "")
-		returnStr = Replace(returnStr, "select", "")
-		returnStr = Replace(returnStr, "drop", "")
-		returnStr = Replace(returnStr, "truncate", "")
-		returnStr = Replace(returnStr, "dbcc", "")
-	End If
-
-	ckStr = returnStr
-End Function
+```java
+public static String checkXss(String input) {
+    if (input == null || input.trim().isEmpty()) {
+        return "";
+    }
+    String output = input;
+    output = output.replaceAll("<", "&lt;");
+    output = output.replaceAll(">", "&gt;");
+    output = output.replaceAll("script", "");
+    output = output.replaceAll("union", "");
+    output = output.replaceAll("update", "");
+    output = output.replaceAll("delete", "");
+    output = output.replaceAll("select", "");
+    output = output.replaceAll("drop", "");
+    output = output.replaceAll("truncate", "");
+    output = output.replaceAll("\\(", "&#40;");
+    output = output.replaceAll("\\)", "&#41;");
+    output = output.replaceAll("'", "&#39;");
+    output = output.replaceAll("eval\\((.*)\\)", "");
+    output = output.replaceAll("[\\\"\\\'][\\s]*javascript:(.*)[\\\"\\\']", "\"\"");
+    return output;
+}
+```
+HTML 코드 또는 쿼리문으로 인식되는 문자를 일반 문자열로 치환해서 방어한다.
+ 
