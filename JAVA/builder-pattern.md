@@ -1,6 +1,5 @@
 ## 빌더 패턴을 사용해야만 하는 이유
 
-#### 생성자와 수정자로 구현된 User 클래스를 바탕으로 왜 생성자나 수정자보다 빌더를 써야하는지 이해해보도록 하자
 ```java
 @NoArgsConstructor 
 @AllArgsConstructor 
