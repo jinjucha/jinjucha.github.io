@@ -18,3 +18,32 @@
 > 악성스크립트가 삽입된 게시글을 클릭하게 되면 사용자가 의도하지 않은 행위, <br>
 > 게시판이나 웹 메일 등에 스크립트를 삽입하여 비정상적인 페이지가 보이게해 <br>
 > 타 사용자의 사용을 방해하거나 쿠키 및 기타 정보를 특정 사이트로 전송하는 등의 공격 방법
+
+취약점 보완코드
+
+'-----------------------------------------------------
+'Change Query String
+'-----------------------------------------------------
+Function ckStr(dest, ishtml)
+	Dim returnStr : returnStr = ""&dest
+	If ishtml = "" Then ishtml = "0"
+
+	If ishtml = "0" Then
+		returnStr = Replace(returnStr, "'", "''")
+	ElseIf ishtml = "1" Then
+		returnStr = Replace(returnStr, "'", "''")
+		returnStr = Replace(returnStr, "<", "&lt;")
+		returnStr = Replace(returnStr, ">", "&gt;")
+		returnStr = Replace(returnStr, "script", "")
+		returnStr = Replace(returnStr, "union", "")
+		returnStr = Replace(returnStr, "update", "")
+		returnStr = Replace(returnStr, "delete", "")
+		returnStr = Replace(returnStr, "xp_cmdshell", "")
+		returnStr = Replace(returnStr, "select", "")
+		returnStr = Replace(returnStr, "drop", "")
+		returnStr = Replace(returnStr, "truncate", "")
+		returnStr = Replace(returnStr, "dbcc", "")
+	End If
+
+	ckStr = returnStr
+End Function
