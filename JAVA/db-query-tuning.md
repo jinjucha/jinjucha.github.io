@@ -9,11 +9,26 @@
 * 자주 조회되는 컬럼
   
 다음은 적절한 인덱스 사용 예시입니다.
+```db
 SELECT *
 FROM orders
 WHERE order_date > '2021-01-01'
 ORDER BY order_id
+```
 
+```query
+SELECT *
+FROM orders
+WHERE order_date > '2021-01-01'
+ORDER BY order_id
+```
+
+```oracle
+SELECT *
+FROM orders
+WHERE order_date > '2021-01-01'
+ORDER BY order_id
+```
 
 이 쿼리에서는 WHERE 절에서 order_date 열에 대한 조건을 사용하고, ORDER BY 절에서 order_id 열을 사용합니다. 따라서, order_date와 order_id 열에 대한 인덱스를 만들어 쿼리의 실행 속도를 향상시키는 것이 좋습니다.
 > CREATE INDEX idx_order_date ON orders (order_date);
