@@ -18,8 +18,10 @@ ORDER BY order_id
 이 쿼리에서는 WHERE 절에서 order_date 열에 대한 조건을 사용하고, ORDER BY 절에서 order_id 열을 사용합니다. <br>
 따라서, order_date와 order_id 열에 대한 인덱스를 만들어 쿼리의 실행 속도를 향상시키는 것이 좋습니다.
 
-> CREATE INDEX idx_order_date ON orders (order_date);
-> CREATE INDEX idx_order_id ON orders (order_id);
+```query
+CREATE INDEX idx_order_date ON orders (order_date);
+CREATE INDEX idx_order_id ON orders (order_id);
+```
 
 ### 적절한 JOIN 사용하기
 > INNER JOIN은 모든 행이 일치하는 경우에만 검색하므로 성능이 뛰어나며, <br>
