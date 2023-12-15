@@ -1,6 +1,6 @@
 ##  JavaScript 보안에 대하여
 
-### 일반적인 JavaScript 취약점
+### 웹보안 취약점(OWASP-10 중 상위 5가지)
 
 ### 크로스 사이트 위조 요청(CSRF, Cross-Site Request Forgery)
 > 크로스 사이트 위조 요청 공격의 가장 일반적인 방법은 웹 페이지에 있는 <br>
