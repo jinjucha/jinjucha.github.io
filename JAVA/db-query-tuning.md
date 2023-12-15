@@ -2,7 +2,7 @@
 
 ### 인덱스 사용하기
 > 인덱스를 사용하면 데이터베이스가 특정 열을 쉽게 찾을 수 있어 대용량 데이터베이스에서 검색속도를 향상시키는데 유용하다. <br>
-> 따라서 적절한 인덱스를 생성해 쿼리의 실행 속도를 높이는 것이 중요하다.<br>
+> 따라서 적절한 인덱스를 생성해 쿼리의 실행 속도를 높이는 것이 중요합니다다.<br>
 
 #### 인덱스를 사용하면 좋은 경우
 * WHERE 절에 사용되는 컬럼
@@ -20,3 +20,8 @@ ORDER BY order_id
 
 > CREATE INDEX idx_order_date ON orders (order_date);
 > CREATE INDEX idx_order_id ON orders (order_id);
+
+### 적절한 JOIN 사용하기
+> INNER JOIN은 모든 행이 일치하는 경우에만 검색하므로 성능이 뛰어나며, <br>
+> OUTER JOIN은 일치하지 않는 행도 검색할 수 있어 성능이 떨어질 수 있습니다. <br>
+> 또한 JOIN의 순서를 최적화하여 성능을 높이는 것도 중요합니다.
