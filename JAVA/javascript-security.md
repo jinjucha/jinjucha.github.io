@@ -53,5 +53,25 @@ public static String checkXss(String input) {
 > 코드를 검증하면 클라이언트 요청 파라미터에서 데이터 조작이 가능해 권한을 부여하지 않은 사용자도 접근 가능하다. <br>
 > 서버에서 권한 체크를 하고 글쓰기 버튼이 포함된 html 코드를 리턴 시 반환하도록 한다.
 ```java
+@GetMapping("/postList")
+public String boardList(Model model) {
+    UserResponseDTO userResponseDTO = (UserResponseDTO) session.getAttribute("user");
+    if (userResponseDTO != null) {
+        String userLevel = userResponseDTO.getAuthCode();
+        String postButtonHtml = createPostButtonHtml(userLevel);
+        model.addAttribute("postButtonHtml", postButtonHtml);
+    }
 
+    return "boardList";
+}
+private String createPostButtonHtml(int departmentCode) {
+    if (departmentCode == 1 || departmentCode == 2) {
+        return "<a href='/writePost'>글쓰기</a>";
+    } else {
+        return "";
+    }
+}
+```
+```html
+<c:out value="${postButtonHtml}" />
 ```
