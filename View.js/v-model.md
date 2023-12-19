@@ -6,7 +6,7 @@
 ```js
 <script setup>
   import { ref } from 'vue'
-  const text = ref('Edit me')
+  const text = ref('username')
 </script>
 ```
 ```html
