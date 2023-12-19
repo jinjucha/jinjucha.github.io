@@ -22,12 +22,11 @@
 
 ```html
 <template>
-  <h2>Text Input</h2>
-  <input v-model="text"> username : {{ text }}
+  <h2>v-model</h2>
+  <input v-model="text"> 
+  <h2>value-input</h2>
+  <input :value="text" @input="text = $event.target.value" />
+	<p>username : {{ text }}</p>
 </template>
 ```
-
-
-
-
-참고자료 : https://engineer-mole.tistory.com/333
+![img](https://github.com/jinjucha/jinjucha.github.io/assets/46393932/d3dd40a0-8002-435e-8b1f-395d44dccaa7)
