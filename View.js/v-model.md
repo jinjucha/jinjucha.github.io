@@ -12,7 +12,7 @@
 ```html
 <template>
   <h2>Text Input</h2>
-  <input v-model="text"> {{ text }}
+  <input v-model="text"> username : {{ text }}
 </template>
 ```
 ![img](https://github.com/jinjucha/jinjucha.github.io/assets/46393932/5fb8caab-dc29-4c9e-b03e-4638372217b9)
