@@ -15,3 +15,7 @@
   <input v-model="text"> {{ text }}
 </template>
 ```
+![img](https://github.com/jinjucha/jinjucha.github.io/assets/46393932/5fb8caab-dc29-4c9e-b03e-4638372217b9)
+
+
+쌍방향으로 링크되어 연동되고 있음을 알 수 있다.
