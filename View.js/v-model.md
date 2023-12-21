@@ -47,17 +47,4 @@ new Vue({
 </script>
 ```
 
-### 동작 원리
-> v-model 속성은 v-bind와 v-on의 기능의 조합으로 동작한다.
-> 매번 사용자가 일일이 v-bind와 v-on 속성을 다 지정해 주지 않아도 된다.
-
-```html
-<template>
-  <h2>v-model</h2>
-  <input v-model="text"> 
-  <h2>value-input</h2>
-  <input :value="text" @input="text = $event.target.value" />
-	<p>username : {{ text }}</p>
-</template>
-```
 ![img](https://github.com/jinjucha/jinjucha.github.io/assets/46393932/d3dd40a0-8002-435e-8b1f-395d44dccaa7)
